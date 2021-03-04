@@ -1,0 +1,239 @@
+<!DOCTYPE html> <!-- !DOCTYPE is tell us this is using HTML5 -->
+
+<html lang="en"> <!--html element is the root element of the html page   "lang" is a attribute of html means language "en" means english-->
+    <head>  <!-- head tag is  contain meta information about the html page-->
+        <title>
+            firsthtml    <!--in title element is showing at the webpage bar-->
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="first.css"/>
+         <!--use of css by this is called internal css-->
+        <style>
+            
+            p{
+                color:salmon;
+                
+            }
+
+        
+            a{
+                font-size: 5vw;
+            }
+        </style>
+         
+         <!--always use view width port(vw) for responsive text size-->
+
+
+
+    </head>
+
+    <body>
+
+        
+
+        <h1> 
+            Ashribad samal
+        </h1>
+
+        <P>many element not need close tag but recomend to use it
+
+    <div>
+        <!--attribute give extra information about element-->
+       <p> <a href="https://www.youtube.com/" target="_parent">youtube</a></p>
+        <p><a href="https://www.youtube.com/" target="_blank">youtube</a></p>
+        <p><a href="https://www.youtube.com/" target="_top">youtube</a></p>
+
+
+        <!--this c4 is pointed to  where id c4-->
+
+
+        <p><a href="#c4">click to go github point</a></p>
+
+       <!--src attribute  having 2 way to display the image -->
+
+        <!-- absolute url-->
+        <img src="https://media.istockphoto.com/photos/shopping-bag-full-of-fresh-vegetables-and-fruits-picture-id1128687123" height="100" width="200" title="image by url">
+
+        <!--Relative Url    use this always-->
+        <img src="food3.jpg" height="100" width="200" title="image by internal folder">
+
+        <!--work of title attribute that it show message when hover on that element
+         it is called tooltip-->
+
+
+        <h4 title="hover here">to show <q>example of quato</q>when hover on</h4>
+
+        <small>this is show small in size and also <mark> mark </mark> show some emphasize and <del >is</del>deleted that word</small>
+        <p>ins used for <ins>inserted</ins> in a </p>
+        <p>H<sub>2</sub>O</p><!--this is called subscripted script-->
+        <p>a<sup>2</sup>+b<sup>2</sup></p><!--this is called superscripted script-->
+
+    </div>
+
+    <!--pre element wher it's not want any special element for space-->
+
+    <pre>
+            My Bonnie lies over the ocean.
+
+            My Bonnie lies over the sea.
+
+            My Bonnie lies over the ocean.
+
+            Oh, bring back my Bonnie to me.
+    </pre>
+
+    <blockquote>For nearly 60 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by more than one million members in the United States and close to five million globally.</blockquote>
+
+    <p>
+        kalinga nagaar,<br>
+        matkambeda,barbil<br>
+        keonjhar,odisha<br>
+    </p>
+
+    <address>
+        kalinga nagaar,<br>
+        matkambeda,barbil<br>
+        keonjhar,odisha<br>
+    </address>
+   
+    <p>address element add a line before and after </p>
+
+    <p>
+        kalinga nagaar,<br>
+        matkambeda,barbil<br>
+        keonjhar,odisha<br>
+    </p>
+
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>for pratice</li>
+            <li>Html</li>
+        </ul>
+    </nav>
+
+    <!--mailto  is required for send mail-->
+
+    <a href="mailto:ashribad.samal00@gmail.com">mail to me</a>
+
+    <h1 style="background-color: rgb(0, 0,0); color:rgb(255, 255,255)">black color</h1>
+    <h1 style="background-color: rgb(0, 255,0);">rgb(red,green,blue)</h1>
+    <h1 style="background-color: rgb(255, 0,0);">rgb(red,green,blue)</h1>
+    <h1 style="background-color: rgb(0,0,255);">rgb(red,green,blue)</h1>
+    <h1 style="background-color: rgb(255, 255,255);">rgb(red,green,blue)</h1>
+    <h1 style="background-color: rgba(0, 255,0,0.5);">rgba(red,green,blue,alpha)</h1>
+    <h1 style="background-color: rgba(0, 255,0,0.0);">rgba(red,green,blue,fullygray)</h1>
+    <h1 style="background-color: rgba(0, 255,0,1.0);">rgba(red,green,blue)</h1>
+
+    <!--this id which is show at starting-->
+
+  <p>  <a id="c4" href="https://github.com/Ashribadsamal" ><b>github</b> </a></p>
+
+
+    <!--img tag always write at the end of picture element-->
+
+
+    <picture>
+        <source media="(min-width:650px)" srcset="food.jpg">
+        <source media="(min-width:465px)" srcset="food4.jpg" >
+        <img src="food3.jpg" style="width: auto;">
+    </picture>
+
+    <table style="width: 100%;" id="table1">
+       <tr>
+           <th>Name</th>
+           <th>Number</th>
+       </tr>
+       <tr>
+           <td>Ashribad</td>
+           <td>891754</td>
+       </tr>
+       <tr>
+        <td>monaj</td>
+        <td>89156646</td>
+    </tr>
+    </table>
+ <div>
+     <iframe src="html1.html" name="iframe_a" height="200px" width="350px" title="iframe example"></iframe>
+     <p><a href="https://www.youtube.com/" target="iframe_a">W3Schools.com</a></p>
+ </div>
+
+ 
+ <article class="parent" style="background-color: white; position: absolute;">
+
+    <aside style="background-color:rgb(48, 241, 200); float:right; width:40%;padding-left: 15px;" >
+        <article class="child1" >
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+        </article>
+    </aside>
+    
+  
+    <article class="child1" style="background-color:gray;">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+    </article>
+  
+    <article  class="child2"style="background-color: rgba(255,0,0,0.5);">
+        It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    </article>
+
+ </article>
+
+ <aside >
+    <article class="child1" style="background-color:gray; float:right; width:40%">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+    </article>
+  </aside>
+
+    <form  autocomplete="on"><!--autocomplete is used for showing previous entry-->
+
+     <!--use for name is equal to name attribute of input-->
+    
+        <fieldset>
+          <legend>example of legend</legend>
+            <label for="name">Name</label>
+            <input type="text" name="name" value="Ashribad"><br>
+            <label for="lname">lastName</label>
+            <input type="text" name="lname" value="samal"><br>
+            <label for="passw">password</label>
+            <input type="password" name="passw" ><br>
+            <label for="name">Name</label>
+            <input type="text" name="name" ><br>
+            
+            <label for="phno">phoneNumber</label>
+            <input type="number" name="phno" value="8917541884"><br><br>
+
+            <label for="browsera">example of datalist</label>
+            <input list="browsers" name="browsera">
+                <datalist id="browsers">
+                    <option value="Internet Explorer">
+                    <option value="Firefox">
+                    <option value="Chrome">
+                    <option value="Opera">
+                    <option value="Safari">
+                </datalist><br><br>
+            <input type="submit" value="submit">
+            <input type="reset">
+
+        </fieldset>
+    </form>
+
+    <form>
+        <label for="car">choose your car</label>
+        <select name="car">
+            <option value="1">volvo</option>
+            <option value="2">maruti</option>
+            <option value="3" selected>merci</option>  <!--use selected -->
+            <option value="4">alto</option>
+        </select>
+    </form>
+
+
+    </body>
+</html>
+
+
+<!--element is start with tag contain some information and end tag-->
+<!--HTML consist of nested means element can contains other element
+      HTML document consist of nested element means it consists at least body element or other element-->
+
